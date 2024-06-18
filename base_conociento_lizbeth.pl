@@ -1,52 +1,58 @@
 % Canción "Bohemian Rhapsody"
-acordes_verso('queen', ['Bb', 'Gm', 'Cm', 'F7']).
-acordes_precoro('queen', ['Eb', 'Ab', 'Eb', 'Abm', 'Cm', 'G', 'Cm', 'G', 'Cm', 'F7', 'Bb', 'Eb', 'Ab', 'D7', 'Gm', 'Bb/D', 'Eb', 'Abm']).
-acordes_coro('queen', ['Am', 'G', 'Am', 'C', 'G', 'C', 'G', 'G', 'Bb', 'G', 'Bb']).
-acordes_puente('queen', ['Eb', 'Bb', 'Eb', 'Bb', 'Eb', 'Bb', 'Eb', 'Ab', 'Eb', 'Bb', 'Eb']).
+acordes_verso1('queen', ['Bb', 'Gm', 'Cm', 'Cm7', 'F7', 'Eb/Cb', 'Eb/Bb', 'Am7b5', 'Abmaj7', 'Eb/G']).
+acordes_precoro('queen', ['Eb', 'Bb/D', 'Cm', 'Fm', 'Eaug', 'Ab/Eb', 'Dm7b5', 'Bb7']).
+acordes_coro('queen', ['Eb', 'Bb/D', 'Cm', 'Fm', 'Eaug', 'Ab/Eb', 'Dm7b5', 'Bb7', 'Abm', 'Ebdim', 'Fm7', 'Bb']).
+acordes_puente('queen', ['A', 'D', 'Adim', 'Db/Ab', 'Ab7', 'C/G', 'E7', 'B', 'Bb', 'Ab/Eb', 'Ebdim', 'Eb', 'Ab', 'Eb/G', 'F7', 'F#dim', 'Fm7']).
 
-% Canción "We Will Rock You"
-acordes_verso('queen', ['E', 'A', 'D']).
-acordes_precoro('queen', ['A', 'D', 'E']).
-acordes_coro('queen', ['E', 'A', 'D']).
-acordes_puente('queen', ['A', 'D', 'E']).
+
+% Canción "Another One Bites the Dust"
+acordes_verso1('queen', ['Em', 'Am']).
+acordes_precoro('queen', ['C', 'G', 'Am', 'B']).
+acordes_coro('queen', ['Em', 'Am', 'F#m', 'A', 'B7']).
+acordes_puente('queen', ['A', 'B']).
+
 
 % Canción "Radio Ga Ga"
-acordes_verso('queen', ['D', 'G', 'Em', 'A']).
-acordes_precoro('queen', ['Bm', 'A', 'G', 'D']).
-acordes_coro('queen', ['G', 'D', 'Em', 'A']).
-acordes_puente('queen', ['Em', 'C', 'G', 'D']).
+acordes_verso1('queen', ['E', 'F#m', 'A', 'F#m', 'A', 'E']).
+acordes_precoro('queen', ['E', 'C#dim/G', 'A', 'Bbdim', 'E/B', 'B', 'A', 'E', 'A', 'E']).
+acordes_coro('queen', ['Esus4', 'A', 'E', 'A', 'E', 'A', 'E', 'Esus4', 'A', 'E', 'A', 'E', 'F#m', 'A', 'B', 'C#m', 'B', 'E']).
+acordes_puente('queen', ['E', 'C#dim/G', 'A', 'Bbdim', 'E/B', 'B', 'A', 'E']).
 
-% Canción "We Will Rock You"
-acordes_verso('queen', ['D', 'A', 'D', 'A', 'G', 'A']).
-acordes_precoro('queen', ['C', 'G', 'A', 'D']).
-acordes_coro('queen', ['G', 'A', 'G', 'A']).
-acordes_puente('queen', ['C', 'G', 'A', 'D']).
+% Canción "Killer Queen"
+acordes_verso1('queen', ['Am', 'G7/B', 'C', 'Em', 'C7', 'F', 'Fm', 'C/G', 'F/G', 'G7']).
+acordes_precoro('queen', ['E7', 'Am', 'G', 'C', 'B7', 'Em', 'D7']).
+acordes_coro('queen', ['G', 'Bm', 'Em', 'F#7', 'E7', 'D/F#', 'E7/G#', 'A', 'F#', 'D', 'G/D', 'C/D', 'C/G']).
+acordes_puente('queen', ['E7', 'Am', 'G', 'B7', 'D', 'Gm', 'D', 'D7']).
+
 
 % Canción "Crazy Little Thing Called Love"
-acordes_verso('queen', ['D', 'G', 'C', 'G']).
-acordes_precoro('queen', ['D', 'C', 'G', 'D']).
-acordes_coro('queen', ['G', 'C', 'G']).
-acordes_puente('queen', ['Bb', 'Eb', 'Bb']).
+acordes_verso1('queen', ['D', 'Dsus4', 'G', 'C', 'G/B', 'Bb']).
+acordes_precoro('queen', ['G', 'Bb', 'E7', 'A7', 'F7']).
+acordes_coro('queen', ['D', 'Dsus4', 'G', 'C', 'G/B', 'Bb', 'E7', 'A7']).
+acordes_puente('queen', ['Bb', 'D', 'G', 'E7', 'A7', 'F7']).
+
 
 
 % Canción "El Tiempo de Ti"
-acordes_verso('playa limbo', ['Am', 'G', 'F', 'C']).
-acordes_precoro('playa limbo', ['F', 'C', 'G', 'Am']).
-acordes_coro('playa limbo', ['Am', 'G', 'F', 'C']).
-acordes_puente('playa limbo', ['Dm', 'Am', 'G', 'F']).
+acordes_verso1('playa limbo', ['C#m', 'A', 'F#m', 'B']).
+acordes_precoro('playa limbo', ['E', 'G#m', 'C#', 'F#m', 'Bm7', 'E7']).
+acordes_coro('playa limbo', ['E', 'G#m', 'C#', 'F#m', 'B']).
+acordes_puente('playa limbo', ['F#', 'A#m', 'D#', 'G#m', 'C#', 'C#m7', 'F#7']).
 
 
 % Canción "Piérdeme el Respeto"
-acordes_verso('playa limbo', ['C', 'Am', 'F', 'G']).
-acordes_precoro('playa limbo', ['F', 'G', 'Am', 'C']).
-acordes_coro('playa limbo', ['C', 'Am', 'F', 'G']).
+acordes_verso1('playa limbo' ['C#m', 'A', 'F#m', 'B']).
+acordes_precoro('playa limbo'['E', 'G#m', 'C#', 'F#m', 'Bm7', 'E7']).
+acordes_coro('playa limbo'['E', 'G#m', 'C#', 'F#m', 'B']).
+acordes_puente('playa limbo' ['F#', 'A#m', 'D#', 'G#m', 'C#', 'C#m7', 'F#7']).
+
+
+% Canción "Un Gancho al Corazón"
+acordes_verso('playa limbo', ['Am', 'F', 'C', 'G']).
+acordes_precoro('playa limbo', ['F', 'C', 'G', 'Am']).
+acordes_coro('playa limbo', ['Am', 'F', 'C', 'G']).
 acordes_puente('playa limbo', ['F', 'C', 'G', 'Am']).
 
-% Canción "Imaginarte"
-acordes_verso('playa limbo', ['Em', 'C', 'G', 'D']).
-acordes_precoro('playa limbo', ['C', 'D', 'Em', 'G']).
-acordes_coro('playa limbo', ['Em', 'C', 'G', 'D']).
-acordes_puente('playa limbo', ['Am', 'Em', 'D', 'C']).
 
 % Canción "A Dónde Va Nuestro Amor"
 acordes_verso('playa limbo', ['G', 'D', 'Em', 'C']).
