@@ -41,10 +41,10 @@ acordes_puente('playa limbo', ['F#', 'A#m', 'D#', 'G#m', 'C#', 'C#m7', 'F#7']).
 
 
 % Canción "Piérdeme el Respeto"
-acordes_verso1('playa limbo' ['C#m', 'A', 'F#m', 'B']).
-acordes_precoro('playa limbo'['E', 'G#m', 'C#', 'F#m', 'Bm7', 'E7']).
-acordes_coro('playa limbo'['E', 'G#m', 'C#', 'F#m', 'B']).
-acordes_puente('playa limbo' ['F#', 'A#m', 'D#', 'G#m', 'C#', 'C#m7', 'F#7']).
+acordes_verso1('playa limbo', ['C#m', 'A', 'F#m', 'B']).
+acordes_precoro('playa limbo',['E', 'G#m', 'C#', 'F#m', 'Bm7', 'E7']).
+acordes_coro('playa limbo',['E', 'G#m', 'C#', 'F#m', 'B']).
+acordes_puente('playa limbo', ['F#', 'A#m', 'D#', 'G#m', 'C#', 'C#m7', 'F#7']).
 
 
 % Canción "Un Gancho al Corazón"
@@ -54,45 +54,44 @@ acordes_coro('playa limbo', ['Am', 'F', 'C', 'G']).
 acordes_puente('playa limbo', ['F', 'C', 'G', 'Am']).
 
 
-% Canción "A Dónde Va Nuestro Amor"
+% Canción "Así Fue"
 acordes_verso('playa limbo', ['G', 'D', 'Em', 'C']).
-acordes_precoro('playa limbo', ['C', 'G', 'D', 'Em']).
-acordes_coro('playa limbo', ['G', 'D', 'Em', 'C']).
+acordes_precoro('playa limbo', ['G', 'D', 'Em', 'C']).
+acordes_coro('playa limbo', ['C', 'G', 'D', 'Em']).
 acordes_puente('playa limbo', ['Am', 'Em', 'D', 'C']).
 
 
 % Canción "Tu Voz"
-acordes_verso('playa limbo', ['G', 'C', 'Em', 'D']).
-acordes_precoro('playa limbo', ['C', 'D', 'G', 'Em']).
-acordes_coro('playa limbo', ['G', 'C', 'Em', 'D']).
-acordes_puente('playa limbo', ['Am', 'Em', 'D', 'C']).
+acordes_verso('playa limbo', ['G', 'D', 'Em', 'C']).
+acordes_precoro('playa limbo', ['G', 'D', 'Em', 'C']).
+acordes_coro('playa limbo', ['C', 'G', 'D', 'Em']).
+acordes_puente('playa limbo', ['Am', 'Em', 'F', 'C']).
 
 
 % Canción "Amor Prohibido"
-acordes_verso('selena', ['G', 'Em', 'C', 'D']).
-acordes_precoro('selena', ['C', 'D', 'G', 'Em']).
-acordes_coro('selena', ['G', 'Em', 'C', 'D']).
-acordes_puente('selena', ['Em', 'C', 'D', 'G']).
-
+acordes_verso('selena', ['G', 'D', 'C', 'G']).
+acordes_precoro('selena', ['G', 'D', 'C', 'G']).
+acordes_coro('selena', ['G', 'C', 'D', 'G']).
+acordes_puente('selena', ['Em', 'Am', 'C', 'G']).
 
 % Canción "Como La Flor"
-acordes_verso('selena', ['D', 'G', 'A', 'D']).
-acordes_precoro('selena', ['G', 'A', 'D']).
-acordes_coro('selena', ['D', 'G', 'A', 'D']).
-acordes_puente('selena', ['Bm', 'G', 'A', 'D']).
+acordes_verso('selena', ['Am', 'G', 'Em', 'Am']).
+acordes_precoro('selena', ['Am', 'G', 'Em', 'Am']).
+acordes_coro('selena', ['F', 'G', 'Am', 'E']).
+acordes_puente('selena', ['Dm', 'G', 'C', 'E']).
 
 
 % Canción "Bidi Bidi Bom Bom"
 acordes_verso('selena', ['G', 'C', 'D', 'G']).
-acordes_precoro('selena', ['C', 'D', 'G']).
-acordes_coro('selena', ['G', 'C', 'D', 'G']).
-acordes_puente('selena', ['Em', 'C', 'D', 'G']).
+acordes_precoro('selena', ['G', 'D', 'C', 'G']).
+acordes_coro('selena', ['G', 'D', 'C', 'G']).
+acordes_puente('selena', ['Am', 'D', 'G', 'C']).
 
-% Canción "No Me Queda Más"
-acordes_verso('selena', ['G', 'Em', 'C', 'D']).
-acordes_precoro('selena', ['C', 'D', 'G', 'Em']).
-acordes_coro('selena', ['G', 'Em', 'C', 'D']).
-acordes_puente('selena', ['Em', 'C', 'D', 'G']).
+% Canción "La carcacha"
+acordes_verso('selena', ['G', 'D', 'C', 'G']).
+acordes_precoro('selena', ['G', 'D', 'C', 'G']).
+acordes_coro('selena', ['G', 'D', 'C', 'G']).
+acordes_puente('selena', ['Am', 'D', 'G', 'C']).
 
 % Canción "Dreaming of You"
 acordes_verso('selena', ['G', 'D', 'Em', 'C']).
