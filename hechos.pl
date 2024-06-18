@@ -449,15 +449,34 @@ acorde_menor(Raiz, Notas) :-
     quinta_justa(Raiz, QuintaJusta),
     Notas = [Raiz, TerceraMenor, QuintaJusta].
 
-% Regla para contar la frecuencia de cada acorde en los versos de un artista
-frecuencia_acordes(Artista, Frecuencias) :-
+frecuencia_verso(Artista, Frecuencias) :-
     findall(Acordes, acordes_verso(Artista, Acordes), ListaAcordes),
     flatten(ListaAcordes, TodosAcordes),
     msort(TodosAcordes, AcordesOrdenados),
     pack(AcordesOrdenados, AcordesEmpaquetados),
     maplist(longitud, AcordesEmpaquetados, Frecuencias).
 
-% Empaqueta elementos consecutivos iguales en listas
+frecuencia_precoro(Artista, Frecuencias) :-
+    findall(Acordes, acordes_precoro(Artista, Acordes), ListaAcordes),
+    flatten(ListaAcordes, TodosAcordes),
+    msort(TodosAcordes, AcordesOrdenados),
+    pack(AcordesOrdenados, AcordesEmpaquetados),
+    maplist(longitud, AcordesEmpaquetados, Frecuencias).
+
+frecuencia_coro(Artista, Frecuencias) :-
+    findall(Acordes, acordes_precoro(Artista, Acordes), ListaAcordes),
+    flatten(ListaAcordes, TodosAcordes),
+    msort(TodosAcordes, AcordesOrdenados),
+    pack(AcordesOrdenados, AcordesEmpaquetados),
+    maplist(longitud, AcordesEmpaquetados, Frecuencias).
+
+frecuencia_puente(Artista, Frecuencias) :-
+    findall(Acordes, acordes_puente(Artista, Acordes), ListaAcordes),
+    flatten(ListaAcordes, TodosAcordes),
+    msort(TodosAcordes, AcordesOrdenados),
+    pack(AcordesOrdenados, AcordesEmpaquetados),
+    maplist(longitud, AcordesEmpaquetados, Frecuencias).
+
 pack([], []).
 pack([X|Xs], [Z|Zs]) :- pack(Xs, X, [X], Z, Zs).
 
@@ -465,17 +484,32 @@ pack([], X, Ys, Ys, []).
 pack([X|Xs], X, Ys, Z, Zs) :- pack(Xs, X, [X|Ys], Z, Zs).
 pack([X|Xs], Y, Ys, Ys, [Z|Zs]) :- X \= Y, pack(Xs, X, [X], Z, Zs).
 
-% Calcula la longitud de cada sublista
 longitud(Lista, Longitud-Elemento) :- length(Lista, Longitud), Lista = [Elemento|_].
 
-% Regla para obtener los cuatro acordes más frecuentes
-acordes_mas_frecuentes(Artista, AcordesMasFrecuentes) :-
-    frecuencia_acordes(Artista, Frecuencias),
+versos_mas_frecuentes(Artista, AcordesMasFrecuentes) :-
+    frecuencia_verso(Artista, Frecuencias),
     sort(0, @>=, Frecuencias, FrecuenciasOrdenadas),
     take(4, FrecuenciasOrdenadas, FrecuenciasTop),
     maplist(snd, FrecuenciasTop, AcordesMasFrecuentes).
 
-% Obtiene los N primeros elementos de una lista
+precoro_mas_frecuentes(Artista, AcordesMasFrecuentes) :-
+    frecuencia_precoro(Artista, Frecuencias),
+    sort(0, @>=, Frecuencias, FrecuenciasOrdenadas),
+    take(4, FrecuenciasOrdenadas, FrecuenciasTop),
+    maplist(snd, FrecuenciasTop, AcordesMasFrecuentes).
+
+coro_mas_frecuentes(Artista, AcordesMasFrecuentes) :-
+    frecuencia_coro(Artista, Frecuencias),
+    sort(0, @>=, Frecuencias, FrecuenciasOrdenadas),
+    take(4, FrecuenciasOrdenadas, FrecuenciasTop),
+    maplist(snd, FrecuenciasTop, AcordesMasFrecuentes).
+
+puente_mas_frecuentes(Artista, AcordesMasFrecuentes) :-
+    frecuencia_puente(Artista, Frecuencias),
+    sort(0, @>=, Frecuencias, FrecuenciasOrdenadas),
+    take(4, FrecuenciasOrdenadas, FrecuenciasTop),
+    maplist(snd, FrecuenciasTop, AcordesMasFrecuentes).
+
 take(0, _, []) :- !.
 take(_, [], []) :- !.
 take(N, [X|Xs], [X|Ys]) :- N > 0, N1 is N - 1, take(N1, Xs, Ys).
