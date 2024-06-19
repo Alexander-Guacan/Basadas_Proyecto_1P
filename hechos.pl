@@ -449,6 +449,20 @@ acorde_menor(Raiz, Notas) :-
     quinta_justa(Raiz, QuintaJusta),
     Notas = [Raiz, TerceraMenor, QuintaJusta].
 
+acorde_septima_menor(Raiz, Notas) :-
+    nota(Raiz),
+    tercera_menor(Raiz, TerceraMenor),
+    quinta_justa(Raiz, QuintaJusta),
+    septima_menor(Raiz, SeptimaMenor),
+    Notas = [Raiz, TerceraMenor, QuintaJusta, SeptimaMenor].
+
+acorde_septima_mayor(Raiz, Notas) :-
+    nota(Raiz),
+    tercera_mayor(Raiz, TerceraMayor),
+    quinta_justa(Raiz, QuintaJusta),
+    septima_menor(Raiz, SeptimaMenor),
+    Notas = [Raiz, TerceraMayor, QuintaJusta, SeptimaMenor].
+
 frecuencia_verso(Artista, Frecuencias) :-
     findall(Acordes, acordes_verso(Artista, Acordes), ListaAcordes),
     flatten(ListaAcordes, TodosAcordes),
