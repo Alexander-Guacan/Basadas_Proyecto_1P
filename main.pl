@@ -67,15 +67,21 @@ select_chord_type(Note) :-
     new(ChordTypeComboBox, menu('Selecciona tipo de acorde', cycle)),
     send(ChordTypeComboBox, append, menu_item(mayor)),
     send(ChordTypeComboBox, append, menu_item(menor)),
+    send(ChordTypeComboBox, append, menu_item(septima_menor)),
+    send(ChordTypeComboBox, append, menu_item(septima_mayor)),
     send(TypeWindow, append, ChordTypeComboBox),
     send(TypeWindow, append, button(crear_acorde, message(@prolog, create_chord, Note, ChordTypeComboBox?selection))),
     send(TypeWindow, open).
 
 create_chord(Note, ChordType) :-
     (ChordType == mayor ->
-        acorde_mayor(Note, ChordNotes)
+        acorde_mayor(Note, ChordNotes);
+    ChordType == menor ->
+        acorde_menor(Note, ChordNotes);
+    ChordType == septima_menor ->
+        acorde_septima_menor(Note, ChordNotes)
     ;
-        acorde_menor(Note, ChordNotes)
+        acorde_septima_mayor(Note, ChordNotes)
     ),
     atomic_list_concat(ChordNotes, ', ', ChordString),
     send(@display, inform, string('Acorde %s %s: %s', ChordType, Note, ChordString)).
